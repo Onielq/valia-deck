@@ -326,9 +326,146 @@ table { border-collapse: collapse; width: 100%; }
 }
 .p5 .district-mini-map img { width:100%; height:100%; object-fit:cover; display:block; }
 
+
+/* ===== Project workspace navigation ===== */
+body { background:#e9e7e1; min-height:100vh; }
+.project-toolbar {
+  position:sticky; top:0; z-index:1000; width:100%;
+  display:flex; align-items:center; gap:15px; flex-wrap:wrap;
+  padding:9px 18px; background:var(--navy-950);
+  border-bottom:1px solid rgba(255,255,255,.14);
+  color:#fff; font-family:'Inter',sans-serif;
+}
+.project-toolbar .toolbar-label {
+  color:#a9b7c9; font-size:8pt; font-weight:800;
+  letter-spacing:1.5px; text-transform:uppercase;
+}
+.project-toolbar .project-tabs {display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
+.project-toolbar button {
+  appearance:none; border:1px solid rgba(255,255,255,.2);
+  background:transparent; color:#e8edf3; border-radius:3px;
+  padding:7px 12px; font:600 9pt 'Inter',sans-serif; cursor:pointer;
+}
+.project-toolbar button:hover {border-color:var(--gold);color:#fff;}
+.project-toolbar button[aria-selected="true"] {
+  background:var(--gold); border-color:var(--gold); color:var(--navy-950);
+}
+.project-toolbar .toolbar-state {
+  margin-left:auto; color:#a9b7c9; font-size:7.5pt;
+  font-weight:700; letter-spacing:1.15px; text-transform:uppercase;
+}
+.project-workspace {width:fit-content;max-width:100%;margin:0 auto;}
+.project-deck[hidden] {display:none!important;}
+.project-deck .page {margin:0 auto;}
+
+/* ===== Bwiza Riverside Homes — Page 1 ===== */
+.bwiza-cover .sidebar {padding:.38in .42in .32in;}
+.bwiza-cover .bwiza-kicker {
+  color:var(--gold);font:700 8.2pt/1.35 'Inter',sans-serif;
+  letter-spacing:1.45px;text-transform:uppercase;margin:0 0 .12in;
+}
+.bwiza-cover .project-name {
+  font-size:37pt;line-height:1.02;letter-spacing:-.5px;
+  margin:.02in 0 .12in;
+}
+.bwiza-cover .locality {font-size:11pt;letter-spacing:1.55px;}
+.bwiza-cover .plot {font-size:10.5pt;margin-top:.05in;}
+.bwiza-cover hr.rule {margin:.15in 0;}
+.bwiza-cover .stats {margin-top:0;}
+.bwiza-cover .stat-row {gap:.15in;padding:.085in 0;}
+.bwiza-cover .stat-row .icon-badge {
+  background:var(--navy-800);border:1px solid rgba(216,190,134,.45);
+  color:var(--gold);font-family:'Inter',sans-serif;font-size:10pt;
+  font-weight:800;letter-spacing:-.4px;
+}
+.bwiza-cover .stat-row .stat-value {font-size:11.4pt;line-height:1.2;}
+.bwiza-cover .stat-row .stat-label {font-size:7.7pt;line-height:1.35;}
+.bwiza-cover .price-box {
+  margin-top:.11in;padding:.12in .17in;align-items:center;
+}
+.bwiza-cover .price-box .label {font-size:7.7pt;letter-spacing:1.25px;}
+.bwiza-cover .price-box .value {font-size:16pt;}
+.bwiza-cover .source-line {
+  margin-top:.10in;color:#a9b7c9;font:500 6.6pt/1.35 'Inter',sans-serif;
+  letter-spacing:.15px;
+}
+.bwiza-cover .hero img {object-position:center center;}
+.bwiza-cover .hero-credit {
+  position:absolute;left:.34in;right:.34in;bottom:.56in;
+  display:flex;justify-content:space-between;gap:10px;align-items:center;
+  padding:.09in .13in;background:rgba(11,24,40,.72);
+  color:#fff;font:700 7pt/1.25 'Inter',sans-serif;
+  letter-spacing:1px;text-transform:uppercase;
+}
+@media(max-width:900px){
+  .project-toolbar .toolbar-state{margin-left:0;}
+  .project-workspace{margin:0;}
+}
+@media print {
+  .project-toolbar{display:none!important;}
+  body{background:#fff;}
+}
+
 </style>
 </head>
 <body>
+<nav class="project-toolbar" aria-label="Project selection">
+  <span class="toolbar-label">Projects</span>
+  <div class="project-tabs">
+    <button type="button" data-project-tab="bwizaProject" aria-selected="true">Bwiza Riverside Homes</button>
+    <button type="button" data-project-tab="valiaProject" aria-selected="false">Valia</button>
+  </div>
+  <span class="toolbar-state" id="projectToolbarState">Page 1 · refinement</span>
+</nav>
+<main class="project-workspace">
+<section id="bwizaProject" class="project-deck" aria-label="Bwiza Riverside Homes project pages">
+<div class="page cover bwiza-cover">
+  <div class="sidebar">
+    <div class="bwiza-kicker">Affordable residential community · Kigali</div>
+    <div class="project-name">Bwiza Riverside<br>Homes</div>
+    <div class="locality">KARAMA · NYARUGENGE</div>
+    <div class="plot">Kigali City, Rwanda</div>
+    <hr class="rule">
+    <div class="stats">
+      <div class="stat-row">
+        <div class="icon-badge">247</div>
+        <div>
+          <div class="stat-value">Homes in Phase I</div>
+          <div class="stat-label">Phase I reported completed in May 2024</div>
+        </div>
+      </div>
+      <div class="stat-row">
+        <div class="icon-badge">06</div>
+        <div>
+          <div class="stat-value">Townhouse typologies</div>
+          <div class="stat-label">Ground + 1 homes with 2, 3 and 4 bedrooms</div>
+        </div>
+      </div>
+      <div class="stat-row">
+        <div class="icon-badge">5</div>
+        <div>
+          <div class="stat-value">Development phases</div>
+          <div class="stat-label">More than 2,208 homes planned across the full development</div>
+        </div>
+      </div>
+    </div>
+    <div class="price-box">
+      <div class="label">CURRENT DEVELOPMENT STAGE</div>
+      <div class="value">Phase II underway</div>
+    </div>
+    <div class="source-line">Project data: ADHI Africa Holding · Phase I figures follow the current developer profile.</div>
+  </div>
+  <div class="hero">
+    <img src="https://www.newtimes.co.rw/thenewtimes/uploads/images/2024/06/15/50760.jpg" alt="Residential streetscape at Bwiza Riverside Homes, Phase II">
+    <div class="hero-credit"><span>BWIZA RIVERSIDE HOMES · PHASE II</span><span>PHOTO: THE NEW TIMES · 15 JUNE 2024</span></div>
+  </div>
+  <div class="footer">
+    <div>BWIZA RIVERSIDE HOMES · KARAMA · KIGALI</div>
+    <div class="pageno">01 / PROJECT OVERVIEW</div>
+  </div>
+</div>
+</section>
+<section id="valiaProject" class="project-deck" aria-label="Valia project pages" hidden>
 
 <!-- PAGE 1 : COVER -->
 <div class="page cover">
@@ -765,5 +902,24 @@ table { border-collapse: collapse; width: 100%; }
   </div>
 </div>
 
+</section>
+</main>
+<script>
+(function(){
+  const tabs=[...document.querySelectorAll('[data-project-tab]')];
+  const decks=[...document.querySelectorAll('.project-deck')];
+  const state=document.getElementById('projectToolbarState');
+  function selectProject(id){
+    for(const deck of decks) deck.hidden=deck.id!==id;
+    for(const tab of tabs){
+      const active=tab.dataset.projectTab===id;
+      tab.setAttribute('aria-selected',String(active));
+    }
+    if(state) state.textContent=id==='bwizaProject'?'Page 1 · refinement':'Five pages · current deck';
+  }
+  for(const tab of tabs) tab.addEventListener('click',()=>selectProject(tab.dataset.projectTab));
+  selectProject('bwizaProject');
+})();
+</script>
 </body>
 </html>
