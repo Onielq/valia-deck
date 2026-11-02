@@ -328,37 +328,6 @@ table { border-collapse: collapse; width: 100%; }
 .p5 .district-mini-map img { width:100%; height:100%; object-fit:cover; display:block; }
 
 
-/* ===== Project workspace navigation ===== */
-body { background:#e9e7e1; min-height:100vh; }
-.project-toolbar {
-  position:sticky; top:0; z-index:1000; width:100%;
-  display:flex; align-items:center; gap:15px; flex-wrap:wrap;
-  padding:9px 18px; background:var(--navy-950);
-  border-bottom:1px solid rgba(255,255,255,.14);
-  color:#fff; font-family:'Inter',sans-serif;
-}
-.project-toolbar .toolbar-label {
-  color:#a9b7c9; font-size:8pt; font-weight:800;
-  letter-spacing:1.5px; text-transform:uppercase;
-}
-.project-toolbar .project-tabs {display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
-.project-toolbar button {
-  appearance:none; border:1px solid rgba(255,255,255,.2);
-  background:transparent; color:#e8edf3; border-radius:3px;
-  padding:7px 12px; font:600 9pt 'Inter',sans-serif; cursor:pointer;
-}
-.project-toolbar button:hover {border-color:var(--gold);color:#fff;}
-.project-toolbar button[aria-selected="true"] {
-  background:var(--gold); border-color:var(--gold); color:var(--navy-950);
-}
-.project-toolbar .toolbar-state {
-  margin-left:auto; color:#a9b7c9; font-size:7.5pt;
-  font-weight:700; letter-spacing:1.15px; text-transform:uppercase;
-}
-.project-workspace {width:fit-content;max-width:100%;margin:0 auto;}
-.project-deck[hidden] {display:none!important;}
-.project-deck .page {margin:0 auto;}
-
 /* ===== Bwiza Riverside Homes — Page 1 ===== */
 .bwiza-cover .sidebar {padding:.38in .42in .32in;}
 .bwiza-cover .bwiza-kicker {
@@ -398,14 +367,8 @@ body { background:#e9e7e1; min-height:100vh; }
   color:#fff;font:700 7pt/1.25 'Inter',sans-serif;
   letter-spacing:1px;text-transform:uppercase;
 }
-@media(max-width:900px){
-  .project-toolbar .toolbar-state{margin-left:0;}
-  .project-workspace{margin:0;}
-}
-@media print {
-  .project-toolbar{display:none!important;}
-  body{background:#fff;}
-}
+@media(max-width:900px){ .project-workspace{margin:0;} }
+@media print { body{background:#fff;} }
 
 
 /* ===== Bwiza Riverside Homes — integrated five-page study ===== */
