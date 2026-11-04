@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Five-page Valia project study for Dubai Creek Harbour, covering the launch, investment case, districts, comparables and location.">
+<title>Valia | Dubai Creek Harbour Project Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
 <style>/* ===== Fonts ===== */
-@font-face { font-family: 'Playfair'; src: url('../fonts/PlayfairDisplay-Regular.ttf'); font-weight: 400; }
-@font-face { font-family: 'Playfair'; src: url('../fonts/PlayfairDisplay-SemiBold.ttf'); font-weight: 600; }
-@font-face { font-family: 'Playfair'; src: url('../fonts/PlayfairDisplay-Italic.ttf'); font-weight: 400; font-style: italic; }
-@font-face { font-family: 'Inter'; src: url('../fonts/Inter-Regular.ttf'); font-weight: 400; }
-@font-face { font-family: 'Inter'; src: url('../fonts/Inter-Medium.ttf'); font-weight: 500; }
-@font-face { font-family: 'Inter'; src: url('../fonts/Inter-SemiBold.ttf'); font-weight: 600; }
-@font-face { font-family: 'Inter'; src: url('../fonts/Inter-Bold.ttf'); font-weight: 700; }
-@font-face { font-family: 'Inter'; src: url('../fonts/Inter-ExtraBold.ttf'); font-weight: 800; }
-@font-face { font-family: 'Inter'; src: url('../fonts/Inter-Italic.ttf'); font-weight: 400; font-style: italic; }
-
 /* ===== Tokens ===== */
 :root {
   --navy-950: #13213b;
@@ -113,7 +109,7 @@ table { border-collapse: collapse; width: 100%; }
 .cover .watermark {
   position: absolute; top: 42%; left: 50%;
   transform: translate(-50%,-50%) rotate(-32deg);
-  font-family: 'Playfair'; font-style: italic; font-weight: 400;
+  font-family:'Playfair Display', Georgia, serif; font-style: italic; font-weight: 400;
   font-size: 46pt; color: rgba(255,255,255,0.22);
   white-space: nowrap; letter-spacing: 1px;
 }
@@ -128,9 +124,9 @@ table { border-collapse: collapse; width: 100%; }
 .presented-by .meta .handle { font-size: 8.8pt; color: var(--gold); font-weight: 600; display:flex; align-items:center; gap:5px; margin-top: 1px;}
 .cover hr.rule { border: none; border-top: 1px solid rgba(255,255,255,0.16); margin: 0.16in 0; }
 .cover .tag { color: var(--gold); font-size: 9.5pt; font-weight: 700; letter-spacing: 2.4px; }
-.cover .project-name { font-family: 'Playfair'; font-style: italic; font-weight: 400; font-size: 52pt; line-height: 1.02; margin: 0.06in 0 0.1in 0; }
+.cover .project-name { font-family:'Playfair Display', Georgia, serif; font-style: italic; font-weight: 400; font-size: 52pt; line-height: 1.02; margin: 0.06in 0 0.1in 0; }
 .cover .locality { font-size: 12pt; font-weight: 700; letter-spacing: 2.2px; }
-.cover .plot { font-family: 'Playfair'; font-style: italic; color: #a9b7c9; font-size: 10.5pt; margin-top: 0.05in; }
+.cover .plot { font-family:'Playfair Display', Georgia, serif; font-style: italic; color: #a9b7c9; font-size: 10.5pt; margin-top: 0.05in; }
 .cover .stats { margin-top: 0.02in; }
 .cover .stat-row { display: flex; align-items: center; gap: 0.16in; padding: 0.105in 0; }
 .cover .stat-row .icon-badge { background: var(--navy-800); width: 0.46in; height: 0.46in; }
@@ -141,12 +137,12 @@ table { border-collapse: collapse; width: 100%; }
   padding: 0.13in 0.2in; display: flex; align-items: baseline; justify-content: space-between;
 }
 .cover .price-box .label { font-size: 8.4pt; letter-spacing: 1.6px; color: #a9b7c9; font-weight: 700; }
-.cover .price-box .value { font-family: 'Playfair'; font-weight: 600; font-size: 18pt; color: var(--gold); }
+.cover .price-box .value { font-family:'Playfair Display', Georgia, serif; font-weight: 600; font-size: 18pt; color: var(--gold); }
 
 /* ===== Page 2 — Investment case ===== */
 .p2 { padding: 0.42in 0.5in 0 0.5in; }
-.p2 .headline { font-family:'Playfair'; font-weight:600; font-size: 27pt; color: var(--navy-950); }
-.p2 .subhead { font-family:'Playfair'; font-style: italic; color: var(--ink-soft); font-size: 12.5pt; margin-top: 0.03in; }
+.p2 .headline { font-family:'Playfair Display', Georgia, serif; font-weight:600; font-size: 27pt; color: var(--navy-950); }
+.p2 .subhead { font-family:'Playfair Display', Georgia, serif; font-style: italic; color: var(--ink-soft); font-size: 12.5pt; margin-top: 0.03in; }
 .p2 .body { display:flex; gap: 0.4in; margin-top: 0.22in; }
 .p2 .col-left { width: auto; flex: 1 1 0; min-width: 0; }
 .p2 .col-right { width: 3.55in; flex: 0 0 3.55in; min-width: 0; }
@@ -173,13 +169,13 @@ table { border-collapse: collapse; width: 100%; }
 
 .p2 .metrics-row { display:flex; gap: 0.22in; margin-top: 0.2in; }
 .p2 .metric-box { flex:1; background: var(--cream); border-radius: 3px; padding: 0.16in 0.18in; }
-.p2 .metric-box .val { font-family:'Playfair'; font-weight:700; font-size: 20pt; color: var(--navy-950); }
+.p2 .metric-box .val { font-family:'Playfair Display', Georgia, serif; font-weight:700; font-size: 20pt; color: var(--navy-950); }
 .p2 .metric-box .lbl { font-size: 7.6pt; color: var(--ink-soft); margin-top: 0.03in; line-height:1.35; }
 .p2 .trend-box { flex:1.3; }
 .p2 .trend-title { font-size: 7.6pt; color: var(--ink-soft); text-align:right; margin-bottom: 0.04in; }
 
 .p2 .side-panel { background: var(--navy-950); color:#fff; border-radius: 4px; padding: 0.22in 0.24in 0.2in; }
-.p2 .side-panel .title { font-family:'Playfair'; font-weight:700; font-size: 15.5pt; line-height:1.3; margin-top: 0.06in; }
+.p2 .side-panel .title { font-family:'Playfair Display', Georgia, serif; font-weight:700; font-size: 15.5pt; line-height:1.3; margin-top: 0.06in; }
 .p2 .side-panel .fig { margin-top: 0.14in; border-radius: 3px; overflow:hidden; }
 .p2 .side-panel .fig img { width:100%; display:block; }
 .p2 .side-panel .cap { font-size: 7.3pt; font-style: italic; color: #9fb0c4; margin-top: 0.06in; }
@@ -199,14 +195,14 @@ table { border-collapse: collapse; width: 100%; }
 .p3-hero .scrim { position:absolute; inset:0; background: linear-gradient(90deg, rgba(12,17,26,0.72) 0%, rgba(12,17,26,0.42) 65%, rgba(12,17,26,0.5) 100%); z-index:1; }
 .p3-hero .inner { position:relative; z-index:2; max-width: 9in; }
 .p3-hero .eyebrow { color: #cfd8e3; }
-.p3-hero h1 { font-family:'Playfair'; font-weight:700; font-size: 21pt; line-height:1.28; margin-top: 0.06in; }
+.p3-hero h1 { font-family:'Playfair Display', Georgia, serif; font-weight:700; font-size: 21pt; line-height:1.28; margin-top: 0.06in; }
 .p3-hero .brandmark {
   position:absolute; top:0.26in; right:0.5in; z-index:2;
   display:flex; align-items:center; gap:0.08in; color:#fff; font-weight:700; font-size:9.5pt;
 }
 .p3-hero .brandmark .dot {
   width:0.28in; height:0.28in; border-radius:5px; background: var(--gold);
-  display:flex; align-items:center; justify-content:center; color: var(--navy-950); font-family:'Playfair'; font-weight:700; font-size:11pt;
+  display:flex; align-items:center; justify-content:center; color: var(--navy-950); font-family:'Playfair Display', Georgia, serif; font-weight:700; font-size:11pt;
 }
 
 .p3-body { padding: 0.2in 0.5in 0 0.5in; }
@@ -215,7 +211,7 @@ table { border-collapse: collapse; width: 100%; }
 .p3 .col-jewels { flex: 1; min-width: 0; }
 .p3 .map-img { height: 1.25in; border-radius: 3px; overflow:hidden; border: 1px solid var(--rule); }
 .p3 .map-img img { width:100%; height:100%; object-fit:cover; display:block; }
-.p3 .districts-title { font-family:'Playfair'; font-weight:700; font-size: 14.5pt; color: var(--navy-950); margin-top: 0.13in; }
+.p3 .districts-title { font-family:'Playfair Display', Georgia, serif; font-weight:700; font-size: 14.5pt; color: var(--navy-950); margin-top: 0.13in; }
 .p3 .districts-body { font-size: 8.4pt; color: var(--ink-soft); line-height: 1.5; margin-top: 0.05in; }
 .p3 .live-today { font-size: 8.2pt; color: var(--ink); margin-top: 0.1in; }
 .p3 .live-today b { font-weight:700; }
@@ -241,8 +237,8 @@ table { border-collapse: collapse; width: 100%; }
 
 /* ===== Page 4 — Comparables ===== */
 .p4 { padding: 0.42in 0.5in 0 0.5in; }
-.p4 .headline { font-family:'Playfair'; font-weight:600; font-size: 25pt; color: var(--navy-950); }
-.p4 .subhead { font-family:'Playfair'; font-style: italic; color: var(--ink-soft); font-size: 11.5pt; margin-top: 0.03in; }
+.p4 .headline { font-family:'Playfair Display', Georgia, serif; font-weight:600; font-size: 25pt; color: var(--navy-950); }
+.p4 .subhead { font-family:'Playfair Display', Georgia, serif; font-style: italic; color: var(--ink-soft); font-size: 11.5pt; margin-top: 0.03in; }
 .p4 .body { display:flex; gap: 0.4in; margin-top: 0.2in; }
 .p4 .col-left { flex: 1 1 0; min-width: 0; }
 .p4 .col-right { flex: 0 0 3.55in; min-width: 0; }
@@ -251,7 +247,7 @@ table { border-collapse: collapse; width: 100%; }
 .p4 table.comp-table thead th { background: var(--navy-900); color:#fff; font-weight:600; text-align:left; padding: 0.09in 0.14in; font-size: 8.6pt; }
 .p4 table.comp-table tbody td { padding: 0.1in 0.14in; border-bottom: 1px solid var(--rule); color: var(--ink); }
 .p4 table.comp-table tbody tr.hi td { background: var(--navy-950); color: #fff; font-weight: 700; }
-.p4 table.comp-table tbody tr.hi td.val { color: var(--gold); font-family:'Playfair'; font-size: 12pt; }
+.p4 table.comp-table tbody tr.hi td.val { color: var(--gold); font-family:'Playfair Display', Georgia, serif; font-size: 12pt; }
 .p4 table.comp-table td.num { text-align:center; }
 
 .p4 .table-note { font-size: 7.8pt; font-style: italic; color: var(--ink-faint); margin-top: 0.09in; }
@@ -263,7 +259,7 @@ table { border-collapse: collapse; width: 100%; }
 .p4 .opp-panel .eyebrow { margin-top: 0; }
 .p4 .opp-stat { margin-top: 0.16in; }
 .p4 .opp-stat:first-of-type { margin-top: 0.14in; }
-.p4 .opp-stat .num { font-family:'Playfair'; font-weight: 700; font-size: 25pt; color: var(--navy-950); line-height:1; }
+.p4 .opp-stat .num { font-family:'Playfair Display', Georgia, serif; font-weight: 700; font-size: 25pt; color: var(--navy-950); line-height:1; }
 .p4 .opp-stat .body { font-size: 8.4pt; color: var(--ink-soft); line-height: 1.5; margin-top: 0.06in; }
 .p4 .opp-rule { border:none; border-top: 1px solid var(--cream-line); margin: 0.18in 0; }
 .p4 .opp-note { font-size: 8.4pt; color: var(--ink-soft); line-height: 1.55; }
@@ -271,8 +267,8 @@ table { border-collapse: collapse; width: 100%; }
 
 /* ===== Page 5 — Location & Lifestyle ===== */
 .p5 { padding: 0.4in 0.5in 0 0.5in; }
-.p5 .headline { font-family:'Playfair'; font-weight:600; font-size: 25pt; color: var(--navy-950); }
-.p5 .subhead { font-family:'Playfair'; font-style: italic; color: var(--ink-soft); font-size: 11.5pt; margin-top: 0.03in; }
+.p5 .headline { font-family:'Playfair Display', Georgia, serif; font-weight:600; font-size: 25pt; color: var(--navy-950); }
+.p5 .subhead { font-family:'Playfair Display', Georgia, serif; font-style: italic; color: var(--ink-soft); font-size: 11.5pt; margin-top: 0.03in; }
 
 .p5 .hero-imgs { display:flex; gap: 0.22in; margin-top: 0.18in; }
 .p5 .mall-col { flex: 0 0 7.1in; min-width:0; }
@@ -284,7 +280,7 @@ table { border-collapse: collapse; width: 100%; }
   font-size: 8.4pt; font-style: italic; padding: 0.07in 0.15in;
 }
 .p5 .mall-stats { display:flex; gap: 0.5in; margin-top: 0.15in; }
-.p5 .mall-stats .stat .val { font-family:'Playfair'; font-weight:700; font-size: 16pt; color: var(--gold-deep); }
+.p5 .mall-stats .stat .val { font-family:'Playfair Display', Georgia, serif; font-weight:700; font-size: 16pt; color: var(--gold-deep); }
 .p5 .mall-stats .stat .lbl { font-size: 7.6pt; color: var(--ink-soft); margin-top:1px; }
 .p5 .map-caption { font-size: 7.6pt; font-style: italic; color: var(--ink-faint); margin-top: 0.08in; }
 
@@ -309,7 +305,7 @@ table { border-collapse: collapse; width: 100%; }
 .presented-by .avatar.avatar-mark,
 .p5 .contact-card .avatar.avatar-mark {
   display:flex; align-items:center; justify-content:center;
-  font-family:'Playfair', serif; font-weight:600; color:var(--gold);
+  font-family:'Playfair Display', serif; font-weight:600; color:var(--gold);
   font-size:22pt; line-height:1;
 }
 .p2 .side-panel .fig { background:#fff; }
